@@ -1,6 +1,6 @@
 {
   "name": "weather-app-v1",  
-  "homepage" : "https://danielcw7.github.io/weather-app-v1",
+  "homepage" : "https://DanielCW7.github.io/weather-app-v1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
