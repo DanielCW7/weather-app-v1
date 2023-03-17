@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './containers/nav';
+import Nav2 from './containers/nav2';
+import Footer from './containers/footer';
+import News from './pages/newsPage';
+import Home from './pages/homePage'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sports from './pages/sportsPage';
+// import pages and route here, nav and footer will wrap every page as a global element
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/News" element={<News />} />
+        <Route path="/Sports" element={<Sports />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
 export default App;
