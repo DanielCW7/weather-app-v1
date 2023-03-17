@@ -10,7 +10,7 @@ import Sports from './pages/sportsPage';
 
 const App = () => {
   return (
-    <HashRouter>
+    <HashRouter basename='/'>
       <Nav />
       <Routes>
         <Route exact path="/" element={<Home />} />
