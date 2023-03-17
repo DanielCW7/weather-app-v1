@@ -12,6 +12,7 @@ const News = () => {
         console.log(info)
         if(response.status === 200) {        
             const storyComponents = info.map(item => {
+                console.log(item.url)
                 return <Story key={item.id} link={item.url} headline={item.seometa.title} desc={item.seometa.description} img={item.variants[0]}/>
             });
             setStories(storyComponents);
@@ -50,7 +51,7 @@ const News = () => {
 
 
     return (
-        <div className="p-20">
+        <div className="p-5 md:p-20">
             <div className="mb-10">
                 <h3 className="text-4xl font-black text-center text-[#5C00FB]"> <i>What's new?</i> </h3>
             </div>

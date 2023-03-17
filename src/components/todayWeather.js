@@ -49,8 +49,8 @@ const Today = (props) => {
     
     return (
         
-        <div className="flex flex-row bg-black rounded-3xl bg-opacity-50 md:w-80 lg:w-60 xl:w-40">
-            <div className="p-5 rounded-tr-3xl rounded-bl-3xl rounded-tl-3xl bg-gray-200 w-60 md:w-50 flex flex-col justify-center md:p-10">
+        <div className="flex flex-col md:flex-row bg-black rounded-3xl bg-opacity-50 md:w-80 lg:w-60 xl:w-40">
+            <div className="p-5 rounded-tr-3xl rounded-bl-3xl rounded-tl-3xl bg-gray-200 w-100 md:w-50 flex flex-col justify-center md:p-10">
                 <p className="text-center mb-5 text-gray-800 font-bold text-md md:text-lg" id="conditions"></p>
                 <div className="flex flex-row items-center justify-center">
                     <img className="max-w-[80px] md:max-w-[100px]" id="icon"/>
@@ -58,7 +58,7 @@ const Today = (props) => {
                 </div>
             </div>
 
-            <div className="p-5 w-50 md:flex-col md:p-10">
+            <div className="p-5 w-100 md:w-50 md:flex-col md:p-10">
                 <div className="flex flex-row justify-between text-white border-b border-dotted border-gray-400"><div className="p-1 font-light">Temp (C)</div><div className="p-1" id="temp_c">?</div></div> 
                 <div className="flex flex-row justify-between text-white border-b border-dotted border-gray-400"><div className="p-1 font-light">Feels like (C)</div><div className="p-1" id="feels_c">?</div></div> 
                 <div className="flex flex-row justify-between text-white border-b border-dotted border-gray-400"><div className="p-1 font-light">Feels like (F)</div><div className="p-1" id="feels_f">?</div></div> 
