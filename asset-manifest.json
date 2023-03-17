@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8cebddb7.css",
+    "main.js": "/static/js/main.08d3157b.js",
+    "static/js/787.5f652c88.chunk.js": "/static/js/787.5f652c88.chunk.js",
+    "static/media/skyline.jpg": "/static/media/skyline.df3f31dbb09cfd7462a3.jpg",
+    "static/media/football.jpg": "/static/media/football.e01d7fe6d58a47612acb.jpg",
+    "static/media/snowy.webp": "/static/media/snowy.f3fb0bc012c27ee8991e.webp",
+    "static/media/rain.webp": "/static/media/rain.5767317009d99d04879a.webp",
+    "static/media/partlyCloudy.webp": "/static/media/partlyCloudy.27acf4d99750ece6e141.webp",
+    "static/media/overcast.webp": "/static/media/overcast.07b31e91e0b7a156b085.webp",
+    "static/media/sunny2.webp": "/static/media/sunny2.821f35bf73685b912210.webp",
+    "static/media/sunset.webp": "/static/media/sunset.a913b2ea455b103eed6a.webp",
+    "static/media/clearSky.webp": "/static/media/clearSky.0a75a1c9c50a1cf0708b.webp",
+    "static/media/lightning.webp": "/static/media/lightning.ac8003faeaf6ba9d8d86.webp",
+    "static/media/fog.webp": "/static/media/fog.95daac8d7b05c7fa44c1.webp",
+    "index.html": "/index.html",
+    "main.8cebddb7.css.map": "/static/css/main.8cebddb7.css.map",
+    "main.08d3157b.js.map": "/static/js/main.08d3157b.js.map",
+    "787.5f652c88.chunk.js.map": "/static/js/787.5f652c88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cebddb7.css",
+    "static/js/main.08d3157b.js"
+  ]
+}
