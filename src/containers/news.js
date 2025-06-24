@@ -45,7 +45,7 @@ const News = () => {
                 throw "An error occurred when trying to fetch today's weather data"
             }
         }
-        getNews()    
+        // getNews()    
 
     }, []);
 

@@ -1,6 +1,5 @@
 import './App.css';
 import Nav from './containers/nav';
-import Nav2 from './containers/nav2';
 import Footer from './containers/footer';
 import News from './pages/newsPage';
 import Home from './pages/homePage'
@@ -16,7 +15,6 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/News" element={<News />} />
-        <Route path="/Sports" element={<Sports />} />
       </Routes>
       <Footer />
     </HashRouter>

@@ -46,7 +46,7 @@ const NewsExpanded = (props) => {
                     throw "An error occured when trying to fetch the news"
                 }
         }
-        getNews()
+        // getNews()
 
      }, [])
 

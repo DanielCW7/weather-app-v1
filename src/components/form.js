@@ -83,8 +83,8 @@ const Form = ({today, week}) => {
             }
         }
 
-        getToday()
-        getWeek()
+        // getToday()
+        // getWeek()
     }
 
     return (
