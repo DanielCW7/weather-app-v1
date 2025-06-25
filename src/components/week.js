@@ -12,15 +12,30 @@ const Week = (props) => {
                 let adjustedDate = day.datetimeStr.substring(0,10);
                 return <Card key={day.datetime}  high={day.maxt} low={day.mint} rain={day.pop} date={adjustedDate} img={day.conditions}/>
             })
-        } else { return <div className="p-10 bg-gray-200 block text-center w-full"> Search for a location to get your 7 day forecast! </div> }
+        } else { return <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"> Search for a location to get your 7 day forecast! </div> }
     }
     
 
 return (
 
-        <ul className="flex flex-col flex-auto md:flex-row " id="weekly" >
-             {test()}
-        </ul>
+        <table className="table table-zebra bg-base-300 min-h-32" id="weekly" >
+            <thead>
+                <tr className="text-center">
+                    <td>Date</td>
+                    <td>Condition</td>
+                    <td>High</td>
+                    <td>Low</td>
+                    <td>Precip</td>
+                </tr>
+            </thead>
+            <tbody className="relative">
+                {test()}                
+                             
+            </tbody>
+
+
+
+        </table>
     )
 }
 

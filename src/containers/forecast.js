@@ -39,14 +39,17 @@ const Forecast = () => {
 
 
     return (
-            <div style={{backgroundImage: `url(${bg()})`}} className="bg-bottom bg-cover min-h-auto flex flex-col justify-end">
-                <div className="p-5 md:p-10 bg-gradient-to-b via-white-200 from-white justify-between flex-auto md:bg-gradient-to-br">
-                    <Form today={setVal} week={setVal2} />
-                    <Today val={val} />
+            <div className="bg-bottom bg-cover">
+                <div className="max-w-7xl m-auto px-2 py-2 flex flex-col md:flex-row justify-center gap-2">
+                    <div className="flex flex-col justify-center grow p-4 gap-4">
+                        <Form today={setVal} week={setVal2} />
+                        <Today val={val} />
+                    </div>
+                    <div className="flex flex-row justify-center grow p-4">
+                        <Week val2={val2}/>
+                    </div>                    
                 </div>
-                <div className="flex flex-row justify-center">
-                    <Week val2={val2}/>
-                </div>
+
             </div>
     )
 }

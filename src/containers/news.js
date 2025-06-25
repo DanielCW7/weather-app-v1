@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef }from "react";
+import stock from "../images/city.webp";
 import Story from '../components/story';
 import Loading from '../components/loader.js';
 import Error from '../components/error'; 
@@ -22,7 +23,8 @@ const News = () => {
             const storyComponents = <Error status={response.status}/>
         
             setStories(storyComponents);
-            setLoading(false);        }
+            setLoading(false);        
+        }
     } 
  
     useEffect(() => {        
@@ -45,7 +47,7 @@ const News = () => {
                 throw "An error occurred when trying to fetch today's weather data"
             }
         }
-        // getNews()    
+        getNews()    
 
     }, []);
 
@@ -53,11 +55,25 @@ const News = () => {
     return (
         <div className="p-5 md:p-20">
             <div className="mb-10">
-                <h3 className="text-4xl font-black text-center text-[#5C00FB]"> <i>What's new?</i> </h3>
+                <h3 className="text-4xl font-black text-center text-secondary"> <i>What's new?</i> </h3>
             </div>
             <div>
-                <div id="newsContainer" className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mb-5 xl:grid-cols-4">
-                    {loading ? <Loading /> : stories}
+                <div id="newsContainer" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-5">
+                    {
+                    loading 
+                        ? <div alt="loading..." className="col-span-4 loading loading-bars loading-xl text-info"></div>
+                        : stories
+                    }
+                    {/* <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} />
+                    <Story link="" headline="nicks win again" desc="obviously they won again" img={stock} /> */}
+
+                    
                 </div>
             </div>
         </div>

@@ -20,29 +20,13 @@ const Card = (props) => {
     
 
     return (
-            <li className="flex flex-auto bg-gray-200 items-center border-b border-gray-300 px-2 xl:px-10 md:flex-col md:px-2 md:border-x md:w-full">
-                <div className="flex flex-row w-50 md:w-auto md:flex-col items-center justify-evenly border-r border-gray-300 md:p-0 border-r-0">
-                    <p className="text-gray-800 text-xs md:text-sm lg:text-md lg:text-lg"> {props.date ?? "?"} </p>                    
-                    <img src={check(props.img)} className="w-1/4 md:w-1/2" /> 
-                </div>
-
-                <div className="flex flex-row flex-auto md:flex-col justify-evenly p-2 md:px-0 md:py-4 md:w-full lg:max-w-[150px]">
-                    <span className="flex flex-col text-xs md:flex-row md:justify-between md:text-md">
-                        <span className="font-light text-gray-800 lg:text-lg">High</span>
-                        <span className="font-bold text-gray-800 lg:text-lg">{props.high ?? "?"}</span>
-                    </span>
-
-                    <span className="flex flex-col text-xs md:flex-row md:justify-between md:text-sm">
-                        <span className="font-light text-gray-800 lg:text-lg">Low</span>
-                        <span className="font-bold text-gray-800 lg:text-lg">{props.low ?? "?"}</span>
-                    </span>
-
-                    <span className="flex flex-col text-xs md:flex-row md:justify-between md:text-sm">
-                        <span className="font-light text-gray-800 lg:text-lg">Precip %</span>
-                        <span className="font-bold text-gray-800 lg:text-lg">{props.rain ?? "?"}</span>
-                    </span>
-                </div>
-            </li>
+            <tr className="bg-base-100 text-center">
+                <td className="">{props.date ?? "[date here]"}</td>
+                <td className=""><img src={check(props.img)} className="w-12 m-auto rounded-full" /></td>
+                <td className="">{props.high ?? "[high here]"}</td>
+                <td className="">{props.low ?? "[low here]"}</td>
+                <td className="">{props.rain ?? "[precip here]"}</td>
+            </tr>
 
             // this goes in the img src{} attr
             // check(props.img)

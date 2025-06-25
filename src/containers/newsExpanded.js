@@ -46,13 +46,17 @@ const NewsExpanded = (props) => {
                     throw "An error occured when trying to fetch the news"
                 }
         }
-        // getNews()
+        getNews()
 
      }, [])
 
     return (
             <div className="p-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3 mb-5 xl:grid-cols-4">
-                {loading ? <Loading /> : stories}
+                {
+                    loading 
+                        ? <div alt="loading..." className="col-span-4 loading loading-bars loading-xl text-info"></div> 
+                        : stories
+                }
             </div>
     )
 }  

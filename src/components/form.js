@@ -83,16 +83,16 @@ const Form = ({today, week}) => {
             }
         }
 
-        // getToday()
-        // getWeek()
+        getToday()
+        getWeek()
     }
 
     return (
-        <form onSubmit={submit} id="search" className="flex flex-col mb-10 md:w-80 lg:w-60 xl:w-40">
-            <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold text-gray-800"> How's the weather in... </h3>
-            <div className="mt-5 flex">
-                <input id="location" type="text" className="flex-grow p-[10px] bg-gray-100 rounded-l-xl focus:bg-gray-200 focus:outline-none" placeholder="Enter a location"></input>
-                <button className="bg-blue-300 p-[10px] rounded-r-xl hover:bg-blue-400 transition-all text-gray-800" type="submit"> submit </button>
+        <form onSubmit={submit} id="search" className="flex flex-col">
+            <h3 className="text-center md:text-left text-2xl md:text-4xl font-bold"> How's the weather in... </h3>
+            <div className="mt-5 flex join">
+                <input id="location" type="text" className="join-item input flex-grow focus:outline-none" placeholder="Enter a location..."></input>
+                <button className="btn btn-primary join-item" type="submit"> search </button>
             </div>
         </form>
     )
